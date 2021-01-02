@@ -32,6 +32,7 @@
 @import 'mixin';
 @import 'common';
 @import 'element/button';
+@import 'section/fonts';
 @import 'section/header';
 @import 'section/slider';
 @import 'section/banner';
@@ -60,12 +61,9 @@
 @import 'section/404';
 @import 'section/privacy-policy';
 
-
-
-
-
-
-
+.dir-ltr {
+    direction: ltr;
+}
 
 
 
