@@ -430,12 +430,12 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
   top: 0;
   height: 100vh;
   transition: .5s;
-  left: 0;
-  margin-left: -300px;
+  right: 0;
+  margin-right: -300px;
   padding: 50px 15px 30px;
   overflow-y: auto; }
   .offcanvas_menu_wrapper.active {
-    margin-left: 0; }
+    margin-right: 0; }
   .offcanvas_menu_wrapper .slinky-theme-default {
     background: inherit;
     min-height: 300px;
@@ -515,12 +515,12 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
 
 .canvas_open {
   position: absolute;
-  right: 20px;
+  left: 20px;
   top: 29px;
   z-index: 9; }
   @media only screen and (max-width: 767px) {
     .canvas_open {
-      right: 20px;
+      left: 20px;
       top: 22px; } }
   .canvas_open a {
     font-size: 26px;
@@ -645,21 +645,21 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
     padding-left: 15px; }
     @media only screen and (min-width: 992px) and (max-width: 1199px) {
       .language_currency > ul > li, .setting_compare > ul > li {
-        margin-right: 11px;
-        padding-right: 12px; } }
+        margin-left: 11px;
+        padding-left: 12px; } }
     .language_currency > ul > li:last-child, .setting_compare > ul > li:last-child {
-      margin-right: 0;
-      padding-right: 0; }
+      margin-left: 0;
+      padding-left: 0; }
       .language_currency > ul > li:last-child::before, .setting_compare > ul > li:last-child::before {
         display: none; }
     @media only screen and (min-width: 768px) and (max-width: 991px) {
       .language_currency > ul > li, .setting_compare > ul > li {
-        margin-right: 7px;
-        padding-right: 8px; } }
+        margin-left: 7px;
+        padding-left: 8px; } }
     @media only screen and (max-width: 767px) {
       .language_currency > ul > li, .setting_compare > ul > li {
-        margin-right: 7px;
-        padding-right: 8px; } }
+        margin-left: 7px;
+        padding-left: 8px; } }
     .language_currency > ul > li::before, .setting_compare > ul > li::before {
       content: "";
       width: 1px;
@@ -803,6 +803,14 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
   @media only screen and (max-width: 767px) {
     .header_middle {
       padding: 0; } }
+  .header_middle .logo {
+    text-align: center; }
+    @media only screen and (min-width: 768px) and (max-width: 991px) {
+      .header_middle .logo {
+        text-align: right; } }
+    @media only screen and (max-width: 767px) {
+      .header_middle .logo {
+        text-align: right; } }
 
 .header_right_info {
   display: flex;
