@@ -301,4 +301,10 @@
     }
     
 }
+
+.no-js .owl-carousel, .owl-carousel.owl-loaded
+{
+    direction:ltr;
+}
+
 /*modal css end*/

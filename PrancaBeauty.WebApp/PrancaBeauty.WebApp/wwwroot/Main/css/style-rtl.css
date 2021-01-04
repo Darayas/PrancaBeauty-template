@@ -1711,7 +1711,8 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
     transition: .3s; }
 
 .banner_text {
-  margin-top: 20px; }
+  margin-top: 20px;
+  text-align: right; }
   @media only screen and (min-width: 768px) and (max-width: 991px) {
     .banner_text {
       margin-top: 17px; } }
@@ -2125,7 +2126,7 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
 .action_links {
   transition: all 0.3s ease;
   position: absolute;
-  right: 10px;
+  left: 10px;
   top: 50px;
   opacity: 0;
   visibility: hidden;
@@ -2163,7 +2164,7 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
   position: absolute; }
   .label_product span.label_sale {
     top: 10px;
-    left: 10px;
+    right: 10px;
     text-transform: uppercase;
     color: #ffffff;
     background: #d52121;
@@ -2205,7 +2206,9 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
     line-height: 20px;
     font-weight: 400;
     text-transform: capitalize;
-    margin-bottom: 10px; }
+    margin-bottom: 10px;
+    text-align: right;
+    direction: rtl; }
     @media only screen and (min-width: 992px) and (max-width: 1199px) {
       .product_content h4 {
         font-size: 16px; } }
@@ -2236,7 +2239,9 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
           color: #d52121; }
 
 .price_box {
-  transition: .3s; }
+  transition: .3s;
+  direction: rtl;
+  text-align: right; }
   .price_box span {
     font-size: 16px;
     font-weight: 600;
@@ -2256,7 +2261,8 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
   bottom: 0;
   opacity: 0;
   visibility: hidden;
-  transition: .4s; }
+  transition: .4s;
+  right: 25px; }
   .add_to_cart a {
     font-size: 18px;
     line-height: 20px;
@@ -7478,6 +7484,9 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
     .product_navactive.owl-carousel .owl-nav div.owl-next {
       right: -7px;
       left: auto; }
+
+.no-js .owl-carousel, .owl-carousel.owl-loaded {
+  direction: ltr; }
 
 /*modal css end*/
 /*  23. newsletter popup css here */
