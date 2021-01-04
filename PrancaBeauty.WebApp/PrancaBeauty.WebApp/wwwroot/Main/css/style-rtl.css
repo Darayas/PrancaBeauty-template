@@ -461,7 +461,7 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
     margin: 0; }
   .offcanvas_main_menu li span.menu-expand {
     position: absolute;
-    right: 0; }
+    left: 0; }
   .offcanvas_main_menu li a {
     font-size: 14px;
     font-weight: 400;
@@ -469,11 +469,12 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
     display: block;
     padding-bottom: 10px;
     margin-bottom: 10px;
-    border-bottom: 1px solid #ededed; }
+    border-bottom: 1px solid #ededed;
+    text-align: right; }
     .offcanvas_main_menu li a:hover {
       color: #d52121; }
   .offcanvas_main_menu li ul.sub-menu {
-    padding-left: 20px; }
+    padding-right: 20px; }
 
 .offcanvas_footer {
   margin-top: 50px;
@@ -496,7 +497,7 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
 .canvas_close {
   position: absolute;
   top: 10px;
-  right: 13px; }
+  left: 13px; }
   .canvas_close a {
     font-size: 18px;
     text-transform: uppercase;
@@ -512,6 +513,9 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
       background: #d52121;
       border-color: #d52121;
       color: #fff; }
+    .canvas_close a i {
+      position: relative;
+      top: 2px; }
 
 .canvas_open {
   position: absolute;
@@ -703,11 +707,11 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
       @media only screen and (min-width: 768px) and (max-width: 991px) {
         .language_currency > ul > li > a, .setting_compare > ul > li > a {
           line-height: 26px;
-          font-size: 13px; } }
+          font-size: 12px; } }
       @media only screen and (max-width: 767px) {
         .language_currency > ul > li > a, .setting_compare > ul > li > a {
           line-height: 26px;
-          font-size: 13px; } }
+          font-size: 12px; } }
       .language_currency > ul > li > a i.ion-ios-arrow-down, .setting_compare > ul > li > a i.ion-ios-arrow-down {
         margin-right: 3px;
         font-size: 13px; }
@@ -818,10 +822,10 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
   justify-content: space-between; }
 
 .header_account_list {
-  margin-left: 40px;
+  margin-right: 40px;
   position: relative; }
   .header_account_list:last-child {
-    margin-right: 0; }
+    margin-left: 0; }
   @media only screen and (min-width: 992px) and (max-width: 1199px) {
     .header_account_list {
       margin-right: 18px; } }
@@ -898,14 +902,16 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
         height: 18px;
         line-height: 18px;
         top: -11px;
-        left: 15px; } }
+        right: 13px;
+        position: absolute; } }
     @media only screen and (max-width: 767px) {
       .header_account_list span.item_count {
         width: 18px;
         height: 18px;
         line-height: 18px;
         top: -11px;
-        left: 15px; } }
+        right: 13px;
+        position: absolute; } }
 
 .header_account_area {
   display: flex;
@@ -932,14 +938,14 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
   display: none; }
   @media only screen and (min-width: 768px) and (max-width: 991px) {
     .dropdown_search {
-      left: -47px;
-      right: auto;
+      right: -75px;
+      left: auto;
       top: 151%;
       width: 250px; } }
   @media only screen and (max-width: 767px) {
     .dropdown_search {
-      left: -47px;
-      right: auto;
+      right: -75px;
+      left: auto;
       top: 151%;
       width: 250px; } }
   .dropdown_search form {

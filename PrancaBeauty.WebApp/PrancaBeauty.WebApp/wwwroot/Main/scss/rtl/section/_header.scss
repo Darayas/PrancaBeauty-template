@@ -106,7 +106,7 @@
         & span {
             &.menu-expand {
                 position: absolute;
-                right: 0;
+                left: 0;
             }
         }
 
@@ -118,6 +118,7 @@
             padding-bottom: 10px;
             margin-bottom: 10px;
             border-bottom: 1px solid $grey_color;
+            text-align: right;
 
             &:hover {
                 color: $secondary_color;
@@ -125,7 +126,7 @@
         }
 
         & ul.sub-menu {
-            padding-left: 20px;
+            padding-right: 20px;
 
             & li {
                 & a {
@@ -166,7 +167,7 @@
 .canvas_close {
     position: absolute;
     top: 10px;
-    right: 13px;
+    left: 13px;
 
     & a {
         font-size: 18px;
@@ -184,6 +185,11 @@
             background: $secondary_color;
             border-color: $secondary_color;
             color: $body-color;
+        }
+
+        i {
+            position: relative;
+            top: 2px;
         }
     }
 }
@@ -427,12 +433,12 @@
 
                 @media #{$tablet-device} {
                     line-height: 26px;
-                    font-size: 13px;
+                    font-size: 12px;
                 }
 
                 @media #{$large-mobile} {
                     line-height: 26px;
-                    font-size: 13px;
+                    font-size: 12px;
                 }
 
                 & i.ion-ios-arrow-down {
@@ -589,11 +595,11 @@
 }
 
 .header_account_list {
-    margin-left: 40px;
+    margin-right: 40px;
     position: relative;
 
     &:last-child {
-        margin-right: 0;
+        margin-left: 0;
     }
 
     @media #{$desktop-device} {
@@ -697,7 +703,8 @@
                 height: 18px;
                 line-height: 18px;
                 top: -11px;
-                left: 15px;
+                right: 13px;
+                position: absolute
             }
 
             @media #{$large-mobile} {
@@ -705,7 +712,8 @@
                 height: 18px;
                 line-height: 18px;
                 top: -11px;
-                left: 15px;
+                right: 13px;
+                position: absolute
             }
         }
     }
@@ -739,15 +747,15 @@
     display: none;
 
     @media #{$tablet-device} {
-        left: -47px;
-        right: auto;
+        right: -75px;
+        left: auto;
         top: 151%;
         width: 250px;
     }
 
     @media #{$large-mobile} {
-        left: -47px;
-        right: auto;
+        right: -75px;
+        left: auto;
         top: 151%;
         width: 250px;
     }
@@ -1059,7 +1067,7 @@
 
 .cart_info {
     width: 63%;
-    text-align:right;
+    text-align: right;
 
     & a {
         font-weight: 400;
@@ -1083,7 +1091,7 @@
 
     & p {
         font-size: 12px;
-        direction:ltr;
+        direction: ltr;
 
         & span {
             font-weight: 600;
