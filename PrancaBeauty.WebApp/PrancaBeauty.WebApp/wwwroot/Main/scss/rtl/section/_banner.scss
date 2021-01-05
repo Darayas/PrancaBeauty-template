@@ -114,6 +114,8 @@
 }
 
 .banner_static_content{
+    text-align:right;
+
     @media #{$large-mobile}{
         margin-bottom: 30px;
     }
