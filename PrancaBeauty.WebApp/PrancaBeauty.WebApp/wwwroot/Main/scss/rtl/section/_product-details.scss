@@ -117,25 +117,27 @@
 
 
     & .priduct_social {
+        text-align: right;
+
         & ul {
             & li {
                 display: inline-block;
-                margin-right: 7px;
+                margin-left: 7px;
 
                 @media #{$tablet-device} {
-                    margin-right: 2px;
+                    margin-left: 2px;
                 }
 
                 @media #{$large-mobile} {
-                    margin-right: 2px;
+                    margin-left: 2px;
                 }
 
                 &:last-child {
-                    margin-right: 0;
+                    margin-left: 0;
                 }
 
                 @media #{$large-mobile} {
-                    margin-right: 0;
+                    margin-left: 0;
                 }
 
                 & a {
@@ -313,7 +315,7 @@
 
     &.color {
         margin-bottom: 26px;
-        text-align:right;
+        text-align: right;
 
         @media #{$large-mobile} {
             margin-bottom: 18px;
@@ -403,6 +405,7 @@
 
 .product_d_action {
     margin-bottom: 14px;
+    text-align: right;
 
     & ul {
         & li {
@@ -420,6 +423,7 @@
 
 .product_meta {
     margin-bottom: 24px;
+    text-align: right;
 
     @media #{$large-mobile} {
         margin-bottom: 20px;
@@ -463,12 +467,12 @@
                 font-size: 20px;
                 color: #555;
                 font-weight: 500;
-                margin-right: 35px;
+                margin-left: 35px;
                 line-height: 26px;
                 position: relative;
 
                 @media #{$large-mobile} {
-                    margin-right: 25px;
+                    margin-left: 25px;
                     font-size: 17px;
                 }
 
@@ -483,7 +487,7 @@
 
             &:last-child {
                 & a {
-                    margin-right: 0;
+                    margin-left: 0;
                 }
             }
         }
@@ -515,6 +519,8 @@
 
 
 .product_info_content {
+    text-align: right;
+
     & p {
         line-height: 28px;
     }
@@ -527,6 +533,7 @@
     & table {
         border-top: 1px solid #ddd;
         width: 100%;
+        text-align: right;
 
         & tbody {
             & tr {
@@ -536,7 +543,7 @@
                     padding: 7px 17px;
 
                     &:first-child {
-                        border-right: 1px solid #ddd;
+                        border-left: 1px solid #ddd;
                         width: 30%;
                         font-weight: 700;
                     }
@@ -578,6 +585,8 @@
 
 
 .reviews_wrapper {
+    text-align: right;
+
     & h2 {
         font-size: 18px;
         font-weight: 500;
@@ -636,7 +645,7 @@
 }
 
 .star_rating {
-    float: right;
+    float: left;
 
     & ul {
         & li {
@@ -658,18 +667,18 @@
         width: 100%;
         border: 1px solid $grey_color;
         position: relative;
-        margin-left: 21px;
+        margin-right: 21px;
         padding: 12px;
         border-radius: 3px;
 
         &::before {
             background: #fff;
-            border-bottom: 1px solid $grey_color;
-            border-left: 1px solid $grey_color;
+            border-top: 1px solid $grey_color;
+            border-right: 1px solid $grey_color;
             content: '';
             display: block;
             height: 10px;
-            left: -6px;
+            right: -6px;
             position: absolute;
             top: 10px;
             -webkit-transform: rotate(45deg);
@@ -1119,6 +1128,7 @@
     }
 
     & .priduct_social {
+
         & ul {
             & li {
                 @media #{$desktop-device} {
