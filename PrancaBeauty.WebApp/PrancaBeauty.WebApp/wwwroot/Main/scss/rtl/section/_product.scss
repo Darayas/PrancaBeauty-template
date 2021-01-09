@@ -1237,7 +1237,7 @@
         & div {
             position: absolute;
             top: -90px;
-            right: 25px;
+            left: 25px;
             font-size: 30px;
             transition: .3s;
             opacity: 0;
@@ -1260,8 +1260,8 @@
                 color: $secondary_color;
             }
 
-            &.owl-next {
-                right: 0;
+            &.owl-prev {
+                left: 0;
             }
         }
     }
@@ -1354,6 +1354,8 @@
 
     & .product_items {
         & .single_product {
+            direction:rtl;
+
             @media #{$desktop-device} {
                 margin-bottom: 23px;
 

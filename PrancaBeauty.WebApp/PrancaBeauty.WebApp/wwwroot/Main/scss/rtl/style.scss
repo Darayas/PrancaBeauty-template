@@ -65,15 +65,23 @@
     direction: ltr;
 }
 
+.nice-select {
+    padding-right: 18px !important;
+    padding-left: 30px !important;
 
+    &:after {
+        right: unset !important;
+        left: 12px;
+    }
 
+    .list {
+        right: 0px;
+        left: auto;
 
-
-
-
-
-
-
-
-
-
+        .option {
+            text-align: right;
+            padding-right: 18px !important;
+            padding-left: 29px !important;
+        }
+    }
+}

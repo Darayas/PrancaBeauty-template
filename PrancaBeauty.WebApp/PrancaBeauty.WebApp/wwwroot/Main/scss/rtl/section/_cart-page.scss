@@ -1,23 +1,26 @@
 /* 13. cart page css here */
 
-.header_cart_page{
+.header_cart_page {
     border-bottom: 1px solid $grey_color;
 }
+
 .other_bread {
-	padding-top: 41px;
-	padding-bottom: 41px;
+    padding-top: 41px;
+    padding-bottom: 41px;
 }
 
-.table_desc{
+.table_desc {
     border: 1px solid $grey_color;
-	margin-bottom: 60px;
-	margin-top: 2px;
-    & .cart_page{
-        & table{
+    margin-bottom: 60px;
+    margin-top: 2px;
+
+    & .cart_page {
+        & table {
             width: 100%;
-            & thead{
-                & tr{
-                    & th{
+
+            & thead {
+                & tr {
+                    & th {
                         border-bottom: 3px solid $secondary_color;
                         border-right: 1px solid $grey_color;
                         font-size: 16px;
@@ -28,86 +31,104 @@
                     }
                 }
             }
-            & tbody{
-                & tr{
-                    & td{
+
+            & tbody {
+                & tr {
+                    & td {
                         border-bottom: 1px solid $grey_color;
                         border-right: 1px solid $grey_color;
                         text-align: center;
                         padding: 10px;
-                        &.product_remove{
+
+                        &.product_remove {
                             min-width: 100px;
-                            & a{
+
+                            & a {
                                 font-size: 20px;
-	                            color:  $fonts_color;
-                                &:hover{
+                                color: $fonts_color;
+
+                                &:hover {
                                     color: $secondary_color;
                                 }
                             }
                         }
-                        &.product_thumb{
+
+                        &.product_thumb {
                             max-width: 180px;
-                            & a{
-                                & img{
+
+                            & a {
+                                & img {
                                     width: 100px;
                                 }
                             }
-                       
                         }
-                        &.product_name{
+
+                        &.product_name {
                             min-width: 180px;
-                            & a{
+
+                            & a {
                                 color: $fonts_color;
                                 text-transform: capitalize;
                                 font-size: 14px;
                                 font-weight: 400;
-                                &:hover{
-                                    color:  $secondary_color;
+
+                                &:hover {
+                                    color: $secondary_color;
                                 }
                             }
                         }
-                        
-                        &.product-price{
+
+                        &.product-price {
                             min-width: 130px;
                             color: $fonts_color;
                             font-size: 16px;
                             font-weight: 500;
                         }
-                        &.product_quantity{
+
+                        &.product_quantity {
                             min-width: 180px;
-                            & label{
+
+                            & label {
                                 font-weight: 500;
-                                margin-right: 5px;
+                                margin-left: 5px;
                             }
-                            & input{
+
+                            & input {
                                 width: 60px;
                                 height: 40px;
-                                padding: 0 5px 0 10px;
+                                padding: 0 10px 0 5px;
                                 background: none;
                                 border: 1px solid $grey_color;
                             }
                         }
-                        & .product_total{
+
+                        & .product_total {
                             min-width: 120px;
                         }
-                        
                     }
                 }
             }
         }
     }
-} 
 
-.cart_page table thead tr:last-child th,.table_desc table tbody tr td:last-child{
+    & .cart_submit {
+        text-align: left;
+    }
+}
+
+.cart_page table thead tr:last-child th, .table_desc table tbody tr td:last-child {
     border-right: 0;
 }
-.cart_submit{
+
+.cart_submit {
     text-align: right;
-	padding: 12px;
-    @media #{$large-mobile}{
+    padding: 12px;
+
+    @media #{$large-mobile} {
         text-align: center;
     }
-    & button{
+
+    & button {
         background: $fonts_color;
         border: 0;
         color: $white;
@@ -121,18 +142,27 @@
         cursor: pointer;
         @include transition(.3s);
         border-radius: 3px;
-        &:hover{
-            background:  $secondary_color;
+
+        &:hover {
+            background: $secondary_color;
         }
     }
 }
-.coupon_inner{
+
+.coupon_inner {
     padding: 10px 20px 25px;
-    & p{
-        font-size: 14px;
-        margin-bottom: 20px; 
+    text-align: right;
+
+    & .checkout_btn {
+        text-align: left;
     }
-    & button{
+
+    & p {
+        font-size: 14px;
+        margin-bottom: 20px;
+    }
+
+    & button {
         background: $fonts_color;
         border: 0;
         color: $white;
@@ -146,29 +176,33 @@
         cursor: pointer;
         @include transition(.3s);
         border-radius: 3px;
-        &:hover{
-            background:  $secondary_color;
+
+        &:hover {
+            background: $secondary_color;
         }
     }
-    & input{
+
+    & input {
         border: 1px solid $grey_color;
         height: 42px;
         background: none;
         padding: 0 20px;
-        margin-right: 20px;
+        margin-left: 20px;
         font-size: 12px;
         color: $fonts_color;
-        @media #{$large-mobile}{
-           margin-bottom: 24px;
+
+        @media #{$large-mobile} {
+            margin-bottom: 24px;
             width: 100%;
         }
-        @media #{$tablet-device}{
-           margin-bottom: 24px;
+
+        @media #{$tablet-device} {
+            margin-bottom: 24px;
             width: 100%;
         }
-        
     }
-    & a{
+
+    & a {
         display: block;
         text-align: right;
         font-size: 14px;
@@ -177,7 +211,8 @@
         border-bottom: 1px solid $grey_color;
         padding-bottom: 10px;
         border-radius: 3px;
-        &:hover{
+
+        &:hover {
             color: $secondary_color;
         }
     }
@@ -185,13 +220,15 @@
 
 
 .coupon_code {
-    &.left{
-        @media #{$large-mobile}{
-           margin-bottom: 59px;
+    &.left {
+        @media #{$large-mobile} {
+            margin-bottom: 59px;
         }
     }
-	border: 1px solid $grey_color;
-    & h3{
+
+    border: 1px solid $grey_color;
+
+    & h3 {
         color: $white;
         line-height: 36px;
         padding: 5px 15px;
@@ -199,8 +236,10 @@
         text-transform: uppercase;
         font-size: 16px;
         font-weight: 500;
-        @media #{$large-mobile}{
-           line-height: 28px;
+        text-align: right;
+
+        @media #{$large-mobile} {
+            line-height: 28px;
             padding: 5px 15px;
             font-size: 15px;
         }
@@ -209,33 +248,39 @@
 
 
 .cart_subtotal {
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-box-pack: justify;
-	-ms-flex-pack: justify;
-	justify-content: space-between;
-    & p{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+
+    & p {
         font-weight: 600;
         font-size: 14px;
+
         &.cart_amount {
             font-size: 18px;
-	        font-weight: 500;
-             @media #{$large-mobile}{
+            font-weight: 500;
+
+            @media #{$large-mobile} {
                 font-size: 14px;
-            }   
+            }
         }
-        & span{
-            margin-right: 30px;
+
+        & span {
+            margin-left: 30px;
+            float: right;
         }
     }
 }
 
 
 
-.checkout_btn{
+.checkout_btn {
     text-align: right;
-    & a{
+
+    & a {
         background: $secondary_color;
         color: $white;
         font-size: 15px;
@@ -245,36 +290,41 @@
         display: inline-block;
         text-transform: capitalize;
         margin-bottom: 0;
-        &:hover{
+
+        &:hover {
             background: $fonts_color;
             color: $white;
         }
     }
 }
 
-.coupon_area{
-   margin-bottom: 60px;
+.coupon_area {
+    margin-bottom: 60px;
 }
 
 
 
 
-.footer_widgets.other_widgets{
-    & .footer_top{
+.footer_widgets.other_widgets {
+    & .footer_top {
         padding-bottom: 0;
         border-bottom: 0;
     }
-    & .footer_top_inner{
-       padding: 55px 0 53px;
+
+    & .footer_top_inner {
+        padding: 55px 0 53px;
         border-top: 1px solid $grey_color;
         border-bottom: 1px solid $grey_color;
-        @media #{$desktop-device}{
+
+        @media #{$desktop-device} {
             padding: 55px 0 59px;
-        } 
-        @media #{$tablet-device}{
+        }
+
+        @media #{$tablet-device} {
             padding: 55px 0 40px;
         }
-        @media #{$large-mobile}{
+
+        @media #{$large-mobile} {
             padding: 55px 0 35px;
         }
     }
