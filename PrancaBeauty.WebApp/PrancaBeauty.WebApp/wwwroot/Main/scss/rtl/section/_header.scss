@@ -786,13 +786,13 @@
             background: inherit;
             height: 42px;
             color: $fonts_color;
-            padding: 0 50px 0 10px;
+            padding: 0 10px 0 50px;
         }
 
         & button {
             position: absolute;
             top: 0;
-            right: 0;
+            left: 0;
             border: 0;
             background: inherit;
             height: 100%;

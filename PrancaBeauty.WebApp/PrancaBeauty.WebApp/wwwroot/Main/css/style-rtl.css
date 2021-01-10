@@ -969,11 +969,11 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
       background: inherit;
       height: 42px;
       color: #333;
-      padding: 0 50px 0 10px; }
+      padding: 0 10px 0 50px; }
     .dropdown_search form button {
       position: absolute;
       top: 0;
-      right: 0;
+      left: 0;
       border: 0;
       background: inherit;
       height: 100%;
@@ -5281,7 +5281,8 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
     background-color: #f7f6f7;
     padding: 15px 10px;
     border-top: 3px solid #d52121;
-    margin-bottom: 0; }
+    margin-bottom: 0;
+    text-align: right; }
     .user-actions h3 a {
       color: #d52121; }
 
@@ -5392,63 +5393,63 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
 .mb-20 {
   margin-bottom: 20px; }
 
-.checkout_form h3 {
-  font-size: 16px;
-  line-height: 30px;
-  padding: 5px 10px;
-  text-transform: uppercase;
-  color: #ffffff;
-  background: #333;
-  font-weight: 500; }
-
-.checkout_form input {
-  border: 1px solid #ededed;
-  background: none;
-  height: 40px;
-  width: 100%;
-  padding: 0 20px;
-  color: #333; }
-
-.checkout_form .nice-select {
-  width: 100%; }
-  .checkout_form .nice-select ul.list {
-    width: 100%;
-    height: 180px;
-    overflow: auto; }
-  .checkout_form .nice-select::after {
-    top: 56%; }
-
-.checkout_form label {
-  font-weight: 500; }
-  .checkout_form label span {
-    color: #d52121; }
-  .checkout_form label.righ_0 {
-    cursor: pointer;
-    font-size: 15px;
-    line-height: 27px;
+.checkout_form {
+  text-align: right; }
+  .checkout_form h3 {
+    font-size: 16px;
+    line-height: 30px;
     padding: 5px 10px;
-    text-transform: capitalize;
+    text-transform: uppercase;
     color: #ffffff;
     background: #333;
     font-weight: 500;
-    -webkit-transition: 0.3s;
-    transition: 0.3s;
-    margin-bottom: 0;
-    border-radius: 5px; }
-    @media only screen and (max-width: 767px) {
-      .checkout_form label.righ_0 {
-        font-size: 13px;
-        line-height: 25px;
-        padding: 3px 10px; } }
-    .checkout_form label.righ_0:hover {
-      background: #333; }
+    text-align: right; }
+  .checkout_form input {
+    border: 1px solid #ededed;
+    background: none;
+    height: 40px;
+    width: 100%;
+    padding: 0 20px;
+    color: #333; }
+  .checkout_form .nice-select {
+    width: 100%; }
+    .checkout_form .nice-select ul.list {
+      width: 100%;
+      height: 180px;
+      overflow: auto; }
+    .checkout_form .nice-select::after {
+      top: 56%; }
+  .checkout_form label {
+    font-weight: 500; }
+    .checkout_form label span {
+      color: #d52121; }
+    .checkout_form label.righ_0 {
+      cursor: pointer;
+      font-size: 15px;
+      line-height: 27px;
+      padding: 5px 10px;
+      text-transform: capitalize;
+      color: #ffffff;
+      background: #333;
+      font-weight: 500;
+      -webkit-transition: 0.3s;
+      transition: 0.3s;
+      margin-bottom: 0;
+      border-radius: 5px; }
+      @media only screen and (max-width: 767px) {
+        .checkout_form label.righ_0 {
+          font-size: 13px;
+          line-height: 25px;
+          padding: 3px 10px; } }
+      .checkout_form label.righ_0:hover {
+        background: #333; }
 
 .checkout_form input[type="checkbox"] {
   width: 15px;
   height: 15px;
   position: relative;
   top: 2px;
-  margin-right: 10px; }
+  margin-left: 10px; }
 
 .order_button button {
   cursor: pointer;
@@ -5476,7 +5477,6 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
 .order-notes textarea {
   border: 1px solid #e5e5e5;
   border-radius: 0;
-  height: 45px;
   max-width: 100%;
   padding: 0 30px 0 20px;
   background: none;
@@ -5525,7 +5525,7 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
   height: 15px;
   position: relative;
   top: 2px;
-  margin-right: 10px; }
+  margin-left: 10px; }
 
 .panel-default img {
   width: 160px; }
@@ -6737,9 +6737,11 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
     border: 0;
     line-height: 35px; }
 
-@media only screen and (min-width: 992px) and (max-width: 1199px) {
-  .blog_sidebar_widget .tag_widget ul li a {
-    padding: 0 12px; } }
+.blog_sidebar_widget .tag_widget ul {
+  text-align: right; }
+  @media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .blog_sidebar_widget .tag_widget ul li a {
+      padding: 0 12px; } }
 
 .widget_search input {
   height: 35px;
@@ -6788,7 +6790,7 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
 .post_thumb {
   width: 60px;
   float: left;
-  margin-right: 10px; }
+  margin-left: 10px; }
 
 .post_wrapper {
   display: -webkit-box;
@@ -7705,7 +7707,7 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
       .error_form form {
         width: 100%; } }
     .error_form form input {
-      padding: 0 60px 0 30px;
+      padding: 0 30px 0 60px;
       background: #f8f8f8;
       border: 1px solid #ddd;
       color: #333;
@@ -7714,7 +7716,7 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
       border-radius: 3px; }
     .error_form form button {
       position: absolute;
-      right: 0;
+      left: 0;
       height: 100%;
       border: none;
       background: no-repeat;
