@@ -9,6 +9,16 @@
     }
 }
 
+.blog_details {
+    .rowLng {
+        direction: ltr;
+
+        .colLng {
+            direction: rtl;
+        }
+    }
+}
+
 .canvas_padding {
     margin-bottom: 0;
 }

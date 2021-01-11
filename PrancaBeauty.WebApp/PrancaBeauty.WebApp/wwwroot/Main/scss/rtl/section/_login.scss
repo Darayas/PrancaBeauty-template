@@ -1,33 +1,40 @@
 
 /* 17. login page css here */
-.account_form{
-    & h2{
+.account_form {
+    text-align: right;
+
+    & h2 {
         font-size: 28px;
         text-transform: capitalize;
         font-weight: 500;
         line-height: 22px;
         margin-bottom: 30px;
-        @media #{$large-mobile}{
+
+        @media #{$large-mobile} {
             font-size: 24px;
             margin-bottom: 20px;
         }
     }
-    & form{
+
+    & form {
         border: 1px solid $grey_color;
         padding: 23px 20px 29px;
         border-radius: 5px;
     }
-    & label{
+
+    & label {
         font-size: 16px;
         font-weight: 400;
         cursor: pointer;
         line-height: 12px;
         margin-bottom: 12px;
-        &:hover{
+
+        &:hover {
             color: $secondary_color;
         }
     }
-    & input{
+
+    & input {
         border: 1px solid $grey_color;
         height: 40px;
         max-width: 100%;
@@ -35,7 +42,8 @@
         background: none;
         width: 100%;
     }
-    & button{
+
+    & button {
         background: $secondary_color;
         border: 0;
         color: $white;
@@ -48,36 +56,46 @@
         text-transform: uppercase;
         cursor: pointer;
         @include transition(.3s);
-        margin-left: 20px;
+        margin-right: 20px;
         border-radius: 20px;
-        &:hover{
-            background:  $fonts_color; 
+
+        &:hover {
+            background: $fonts_color;
         }
+    }
+
+    .login_submit {
+        text-align: left !important;
     }
 }
 
 
 .login_submit label input[type="checkbox"] {
-	width: 15px;
-	height: 13px;
-	margin-right: 3px;
+    width: 15px;
+    height: 13px;
+    margin-left: 3px;
 }
-.login_submit{
+
+.login_submit {
     text-align: right;
-    & a{
+
+    & a {
         font-size: 15px;
-        float: left;
+        float: right;
         line-height: 39px;
-        &:hover{
+
+        &:hover {
             color: $secondary_color;
         }
-        @media #{$tablet-device}{
+
+        @media #{$tablet-device} {
             float: none;
             line-height: 18px;
             display: block;
             margin-bottom: 20px;
         }
-        @media #{$large-mobile}{
+
+        @media #{$large-mobile} {
             float: none;
             line-height: 18px;
             display: block;
@@ -87,18 +105,17 @@
 }
 
 .customer_login {
-	padding-bottom: 60px;
+    padding-bottom: 60px;
 }
 
 .account_form p {
-	margin-bottom: 20px;
-    
+    margin-bottom: 20px;
 }
+
 .account_form.register {
-     @media #{$large-mobile}{
+    @media #{$large-mobile} {
         margin-top: 57px;
     }
-	
 }
 
 
