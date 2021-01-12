@@ -34,6 +34,8 @@
     <!--plugins css-->
     <link rel="stylesheet" href="~/Main/css/plugins.css">
 
+    @RenderSection("styles", false)
+
     <!-- Main Style CSS -->
     <link rel="stylesheet" href="~/Main/css/style-rtl.min.css">
 
@@ -73,6 +75,8 @@
     <script src="~/Main/js/slinky.menu.js"></script>
     <!-- Plugins JS -->
     <script src="~/Main/js/plugins.js"></script>
+
+    @RenderSection("scripts", false)
 
     <!-- Main JS -->
     <script src="~/Main/js/main.js"></script>

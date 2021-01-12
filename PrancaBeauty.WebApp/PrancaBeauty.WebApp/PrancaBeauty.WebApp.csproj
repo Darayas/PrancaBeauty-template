@@ -5,14 +5,21 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Content Remove="bundleconfig.json" />
     <Content Remove="compilerconfig.json" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="wwwroot\Admin\" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\leafletJS\leaflet.min.css" />
   </ItemGroup>
 
   <ItemGroup>
+    <Folder Include="wwwroot\Admin\" />
+    <Folder Include="wwwroot\lib\leafletJS\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="bundleconfig.json" />
     <None Include="compilerconfig.json" />
   </ItemGroup>
 
